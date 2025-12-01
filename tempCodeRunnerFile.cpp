@@ -1,0 +1,1 @@
+ cout<<"Division is: "<<a/b;

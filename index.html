@@ -1,0 +1,69 @@
+<!Doctypehtml>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <style>
+            body{
+                background-color: rgba(130, 160, 95, 0.484);
+            }
+            label{
+                display:block;
+                margin: 5px;
+                font: 15px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                
+            }
+            input{
+                display: block;
+                margin: 5px;
+            }
+            button{
+                height: 40px;
+                background-color: azure;
+                width: 170px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+<H1>
+    Aggregate calculator for ecat
+</H1>
+<label>
+    Enter your matric marks:
+</label>
+<input id="matric">
+<label>
+    Enter your part 1 marks: 
+</label>
+<input id="part1">
+<label>
+    Enter your Ecat marks: 
+</label>
+<input id="Ecat">
+<button onclick="maaz()">
+    calculate 
+</button>
+<h1 id="result">
+
+
+</h1>
+<script>
+    function maaz(){
+
+    
+    let m;
+    let p1;
+    let ecat;
+    let result;
+    m=parseFloat(document.getElementById('matric').value)
+    p1=parseFloat(document.getElementById('part1').value)
+    ecat=parseFloat(document.getElementById('Ecat').value)
+    result=m*17/1100+p1*50/570+ecat*33/400;
+    document.getElementById('result').innerText="your aggregate is: "+result;}
+
+</script>
+    </body>
+</html>

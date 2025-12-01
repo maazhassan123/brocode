@@ -1,17 +1,24 @@
 #include <iostream>
 using namespace std;
-int  maaz(int t){
 
-    int celsius;
-    cout<<"Enter the temperature in kelvin(K): ";
-    cin>>t;
-    celsius=t-273;
-    cout<<celsius;
-    return celsius;
+int main() {
+    int alpha;
+    cout<<"enter alpha:";
+    cin>>alpha;
+    switch (alpha) {
+case 1:
+alpha = alpha + 3;
+case 3:
+alpha++;
+break;
+case 6:
+alpha = alpha + 6;
+case 8:
+alpha = alpha * 8;
+default:
+alpha--;
 
 }
-int main() {
-int t;
-    maaz(t);
+cout<<alpha;
     return 0;
 }
